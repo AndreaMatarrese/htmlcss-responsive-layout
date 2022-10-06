@@ -8,6 +8,17 @@ html{
     font-family: 'Open Sans', sans-serif;
 }
 
+main{
+    margin-top: 3rem;
+
+}
+.container{
+    max-width: 1100px;
+    margin:auto;
+}
+svg{
+    width: 100%;
+}
 /* GENERALI */
 .btn1{
     color:#1f3041;
@@ -47,9 +58,10 @@ ul{
 }
 
 .menu{
-    width: 100%;
+    width: 1100px;
+    margin: auto;
     height: 5rem;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,48 +72,326 @@ header .hamburger{
 }
 
 
-
-
 /* SEZIONE 1 */
-.container{
+.sezione1 .container{
     max-width: 1100px;
     margin: auto;
-    column-gap: 20px;
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 
+}
+
+.sezione1 h2{
+    color: #0084FD;
 }
 
 .blocco{
     background-color: #B5DDFF;
-    max-width: calc(100%/3);
+    flex-basis: 30%;
+    max-width: calc(100%/3)-1rem;
     border-radius: 15px;
-    
+    text-align: center;
+    padding: 1rem;
+    flex: 1 1 30%;
+    /* display: flex;
+    justify-content: center; */
     
 }
 
-.blocco:first-child{
-    max-width: 66.6%;
+.blocco1{
+    background-color: #B5DDFF;
+    flex: 1 0 60%;
+    max-width: calc(((100%/3)*2)-1rem);
+    border-radius: 15px;
     display: flex;
     flex-wrap: wrap;
+    padding: 0 2rem;
+    padding-top: 2rem;
+    position: relative;
+    
 }
 
-.blocco:first-child .imgb{
+.blocco1 .imgb{
     width: 195px;
 }
-.blocco:first-child p{
+.blocco1 p{
     flex-basis: 60%;
 }
-.blocco:first-child a{
+.blocco1 a{
     display: block;
-    flex-basis: 100%;
+    flex-basis: 51%;
+    position: absolute;
+    bottom: 10px;
 }
-.sezione1 h2{
-    width: 100%;
+.btn2{
+    background-color: #0084FD;
+    color: white;
+    padding: .5rem 2rem;
+    border-radius: 10em;
+    text-decoration: none;
 }
 
-.sezione1 h2{
+.blocco1 h2{
     flex-basis: 100%;
+    color: #0084FD;
 }
+
+.ico{
+    max-width: 100%;
+    width:50px;
+    height: 50px;
+    margin: auto;
+    color: #0084FD;
+    
+}
+
+/* SEZIONE 2  */
+
+.sezione2{
+    background-color: #9593E6;
+}
+
+.sezione2 .container{
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 5rem 5rem;
+    gap: 20px;
+}
+.col1 p{
+    color:white;
+    margin-top: 2rem ;
+}
+.col1 h2{
+    color: white;
+    margin-top: 2rem;
+}
+.col2{
+    text-align: center;
+    background-color: white;
+    border-radius: 2em;
+    padding: 2rem 2rem;
+}
+.col2 p{
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.8em;
+}
+div.ico{
+    background-color: #9593E6;
+    color: white;
+    border-radius: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgc1{
+    width: 300px;
+}
+.imgc2{
+    width: 150px;
+}
+.sezione2 div{
+    flex: 1 1 50%;
+}
+/* SEZIONE 3 */
+.sezione3 .container{
+    text-align: center;
+}
+.sezione3 h3, h2, p{
+    margin-top: 1.5rem;
+}
+.sezione3 h2{
+    color: #9593E6;
+    font-size: 2rem;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 3rem;
+    background-color: #9593E6;
+    border-radius: 35px;
+    text-align: left;
+    padding: 2rem 1rem;
+    color: white;
+}
+.card img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 200px;
+    flex: 0 0 20%;
+}
+.card div{
+    flex: 0 0 70%;
+}
+.card div:last-child{
+    margin-top: 2rem;
+}
+.card p::before{
+    content: '\f10d';
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+.card p::after{
+    content: '\f10e';
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+/* SEZIONE 4 */
+.sezione4{
+    background-color: #9593E6;
+    margin: 2rem 0;
+}
+.sezione4 h2{
+    color: white;
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+.sezione4 .container{
+    text-align: center;
+    padding: 2rem 0;
+}
+.points-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.point{
+    /* width: calc(100%/3); */
+    text-align: left;
+    background-color: white;
+    border-radius: 15px;
+    padding: 2rem 2rem;
+    flex: 1 1 30%;
+}
+.point div{
+    font-size: 4rem;
+    font-weight: 600;
+    color: #9593E6;
+}
+.point h4{
+    color: #9593E6;
+}
+.point p{
+    margin-bottom: 2rem;
+}
+.btnv{
+    color: white;
+    background-color: #9593E6;
+    padding: .5rem 2rem;
+    border-radius: 10rem;
+    text-decoration: none;
+}
+/* SEZIONE 5 */
+.sezione5{
+    padding-bottom: 5rem;
+}
+.sezione5 h2{
+    font-size: 3rem;
+    margin-bottom: 0rem;
+    color: #9593E6;
+    padding-top: 2rem;
+    
+}
+.sezione5 .container{
+    display: flex;
+}
+.text{
+    padding: 0 2rem;
+    width: 80%;
+}
+.image{
+    color: #9593E6;
+    width: 20%;
+    padding-top: 2rem;
+}
+.image img{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    object-fit: cover;
+}
+.image img::after{
+    content: '\f10d';
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+.image i{
+    color: white;
+}
+.image a{
+    padding: .5rem 1rem;
+}
+.image h4{
+    margin-bottom: 1rem;
+}
+
+/* SEZIONE 6 */
+.sezione6{
+    background-color: #9593E6;
+    padding: 3rem 0;
+}
+.sezione6 .container{
+    text-align: center;
+    color: white;
+}
+.sezione6 h4{
+    font-weight: 400;
+}
+.sezione6 h3{
+    font-size: 2rem;
+}
+.sezione6 h2{
+    font-size: 4rem;
+    color:#FDC05D;
+}
+.sezione6 p{
+    width: 600px;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+.btnw{
+    padding: 1.5rem 4rem;
+    color: #9593E6;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10rem;
+    
+}
+.container div{
+    margin-top: 3rem;
+}
+.privacy{
+    color: white;
+}
+/* FOOTER */
+footer{
+    background-color: #333333;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+footer .container{
+    text-align: center;
+    color: #ededed;
+    max-width: 600px;
+}
+footer p{
+    margin-bottom: 7rem;
+    margin: auto;
+}
+footer a{
+    color: #9593E6;
+}
+
 /* DESKTOP */
 
 @media screen and (min-width: 811px) {
@@ -125,6 +415,7 @@ header .hamburger{
     header ul{
         display: none;
     }
-    }
-    
+
 }
+
+    
